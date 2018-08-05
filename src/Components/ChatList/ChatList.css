@@ -1,0 +1,9 @@
+
+.chatlist-items{
+
+
+
+
+	display: flex;
+	flex-direction: column;
+}
