@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Components/Header/Header'
 import ChatList from './Components/ChatList/ChatList'
+import ChatBox from './Components/ChatBox/ChatBox'
 
 
 import './App.css';
@@ -16,7 +17,9 @@ class App extends Component {
         <div className = "chatlist-div">
        <ChatList/>
         </div>
-        <div className = 'chatbox-div'></div>
+        <div className = 'chatbox-div'>
+         <ChatBox/>
+        </div>
         </div>
       </div>
     );
