@@ -1,6 +1,6 @@
 .chatlist-item {
 
-box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+box-shadow: 0px 10px 1px #888e96, 0 10px 20px #888e96;
 background-color: #f64372;
 border-bottom: 1px solid black;
 display:flex;

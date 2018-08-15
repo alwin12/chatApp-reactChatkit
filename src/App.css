@@ -11,6 +11,7 @@
 
   
 flex:0 2 250px;
+background-color: #888e96
 
 
 
@@ -19,7 +20,14 @@ flex:0 2 250px;
 .chatbox-div{
 
  border: 2px solid blue;
-flex: 4 0 800px;
-background-color: pink;
+flex: 4 1 800px;
+background-color: #888e96;
 
+}
+
+.flex-item{
+
+
+	display: flex;
+	flex-direction: column;
 }

@@ -2,11 +2,15 @@ import React from 'react'
 import {ThemeProvider
 } from '@livechat/ui-kit'
 
-import Message from "../Message/Message"
+import Msg from "../Msg/Msg"
 
 import NameBar from "../NameBar/NameBar"
+import Scroll from "../Scroll/Scroll"
 
- const ChatBox = () => {
+import InputField from '../InputField/InputField'
+import "./ChatBox.css"
+
+ const ChatBox = (props) => {
 
 
 
@@ -15,18 +19,25 @@ import NameBar from "../NameBar/NameBar"
 return (
 
 <div>
-<ThemeProvider>
-<div>
-   <NameBar/>
 
-  //scroll
-  <Message/>
-  //scroll
+  <ThemeProvider>
 
-  </div>
+<div className ="flex-item">
+
+   <NameBar />
+   
+   
+  <Scroll>
+  <Msg messages = {props.user.messages}/>
+  </Scroll>
+  
+  
+ <InputField onEnterPress ={props.onEnterPress} onChange = {props.onChange}/>
+ 
+</div>
 
 </ThemeProvider>
-
+  
 </div>
 
 	)
